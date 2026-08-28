@@ -1,0 +1,17 @@
+/*
+* Site-specific overrides. Loaded after style.css so these rules win.
+*/
+
+/*
+* Service card images sit in a uniform 571 x 353 frame, matching the
+* dimensions the template's stock service photos were cut to. Images with a
+* different native ratio (e.g. the portrait Accu-SPINA photo) are scaled to
+* fit inside that frame rather than cropped or stretched, so every card in
+* the grid stays the same height.
+*/
+.post-modern-media img {
+	width: 100%;
+	aspect-ratio: 571 / 353;
+	object-fit: contain;
+	background: #fff;
+}
